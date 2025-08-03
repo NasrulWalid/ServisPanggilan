@@ -1,0 +1,176 @@
+.banner {
+  background: url("backgroundcover.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  color: #fff;
+}
+.tombol-keren {
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 20px rgba(0, 128, 0, 0.3);
+}
+
+.tombol-keren:hover {
+  transform: scale(1.05);
+  background-color: #28c745;
+  box-shadow: 0 12px 24px rgba(0, 128, 0, 0.5);
+}
+
+.tombol-keren i {
+  transition: transform 0.3s ease-in-out;
+}
+
+.tombol-keren:hover i {
+  transform: rotate(-15deg) scale(1.2);
+}
+
+.nav-link.active-nav {
+  color: #ffffff;
+  position: relative;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 8px;
+  padding: 12px 20px;
+}
+
+.nav-link.active-nav:hover {
+  background-color: #ffc107; /* kuning */
+  color: #212529; /* teks jadi gelap */
+}
+
+.crop-img {
+  object-fit: cover;
+}
+
+.tim img {
+  width: 250px;
+  height: 250px;
+  border: 10px solid #cccc;
+}
+
+a.sosial {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #ffff;
+  border-radius: 50%;
+  background-color: #333;
+  line-height: 40px;
+}
+
+.client img {
+  height: auto;
+  max-height: 50px;
+}
+
+.banner h1,
+.banner p,
+.banner h4 {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.tagline {
+  background-color: rgba(0, 0, 0, 0.5); /* hitam transparan */
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.navbar-brand {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0049a1 !important;
+  transform: scale(1.05);
+  text-shadow: 0 0 5px rgba(255, 5, 101, 0.5);
+}
+
+.navbar {
+  background-color: #1a1a1a !important;
+  border-bottom: 2px solid #ff0565;
+}
+/* LAYANAN */
+.layanan-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+}
+
+.layanan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.btn-animate {
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  min-width: 200px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-animate:hover {
+  transform: translateX(5px);
+}
+
+.btn-animate::after {
+  content: " ➜";
+  opacity: 0;
+  position: absolute;
+  right: -20px;
+  transition: all 0.3s ease;
+}
+
+.btn-animate:hover::after {
+  opacity: 1;
+  right: 10px;
+}
+/* LAYANAN */
+/* tentang */
+.custom-rounded {
+  border-radius: 40px; /* Semakin besar angkanya, semakin tumpul */
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  bottom: 45px;
+  right: 45px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebea5;
+  transform: scale(1.1);
+}
+
+.whatsapp-float i {
+  line-height: 1;
+}
+/* WHATSAPP FLOAT END */
+footer {
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

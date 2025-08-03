@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servis Alat Rumah Tangga</title>
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <!-- JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- NAVBAR MULAI -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top shadow-lg navbar-custom"
+      style="
+        background: rgba(127, 122, 122, 0.7); /* hitam semi-transparan */
+        backdrop-filter: blur(8px); /* efek blur belakang */
+        -webkit-backdrop-filter: blur(8px); /* untuk Safari */
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        min-height: 100px;
+        font-size: 1.2rem;
+      "
+    >
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold text-warning d-flex align-items-center"
+          href="#home"
+        >
+          <img
+            src="logotukang.png"
+            alt="Logo"
+            style="height: 65px; margin-right: 20px"
+          />
+          <span style="font-size: 1.5rem">Servis Ariston</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-right" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-2">
+              <a class="nav-link active-nav fw-semibold" href="#layanan"
+                >Layanan</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link active-nav fw-semibold" href="#tentang"
+                >Tentang</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link active-nav fw-semibold" href="#testimoni"
+                >Testimoni</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link active-nav fw-semibold" href="#kontak"
+                >Kontak Kami</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://wa.me/6281234567890"
+                target="_blank"
+                class="btn btn-success btn-lg shadow"
+              >
+                <i class="fa-brands fa-whatsapp me-2"></i>Hubungi Kami
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR SELESAI -->
+
+    <!-- BANNER -->
+    <div class="container-fluid banner" id="home">
+      <div
+        class="container text-center text-white py-5"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
+        <h1 class="display-4 fw-bold">Selamat Datang di</h1>
+        <h1 class="display-3 fw-bold">Jasa Tukang Panggilan Profesional</h1>
+        <p class="lead mt-3 tagline text-white">
+          <span class="check-item">✅ Solusinya Cepat</span>
+          <span class="separator">•</span>
+          <span class="check-item">✅ Pekerjaan Rapi</span>
+          <span class="separator">•</span>
+          <span class="check-item">✅ Harga Terjangkau</span>
+        </p>
+
+        <h4 class="mt-4">👉 Cek Layanan Kami Sekarang!</h4>
+        <a href="#layanan">
+          <button
+            type="button"
+            class="btn btn-success btn-lg px-5 py-2 mt-3 fs-3 tombol-keren"
+          >
+            <i class="fa-solid fa-tools me-2"></i> Cek Layanan
+          </button>
+        </a>
+      </div>
+    </div>
+    <!-- BANNER SELESAI -->
+
+    <!-- LAYANAN MULAI -->
+    <div class="container-fluid layanan pt-5 pb-5 bg-light" data-aos="fade-up">
+      <div class="container text-center">
+        <h2 class="display-3 fw-bold mb-4" id="layanan">LAYANAN</h2>
+        <p class="lead text-muted mb-5">
+          Kami melayani perbaikan dan servis peralatan rumah tangga langsung ke
+          lokasi Anda.
+        </p>
+
+        <div class="row pt-4 justify-content-center">
+          <!-- Item Layanan -->
+          <div class="col-md-4 text-center mb-4">
+            <div class="layanan-card p-4 rounded shadow h-100">
+              <img
+                src="waterheater.jpeg"
+                alt="Servis Water Heater"
+                class="img-fluid mb-3 rounded"
+                style="height: 180px; object-fit: cover"
+              />
+              <h5 class="fw-semibold">Servis Water Heater</h5>
+              <p class="text-muted">
+                Perbaikan water heater listrik dan gas, ganti elemen, bocor,
+                tidak panas.
+              </p>
+              <a
+                href="https://wa.me/6281234567890?text=Halo%2C%20saya%20butuh%20servis%20Water%20Heater"
+                target="_blank"
+                class="btn btn-success mt-2 btn-animate"
+              >
+                <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center mb-4">
+            <div class="layanan-card p-4 rounded shadow h-100">
+              <img
+                src="kompor.jpeg"
+                alt="Servis Kompor"
+                class="img-fluid mb-3 rounded"
+                style="height: 180px; object-fit: cover"
+              />
+              <h5 class="fw-semibold">Servis Kompor</h5>
+              <p class="text-muted">
+                Kompor gas & listrik tidak menyala, bocor, pengapian rusak, atau
+                berkarat.
+              </p>
+              <a
+                href="https://wa.me/6281234567890?text=Halo%2C%20saya%20butuh%20servis%20Kompor"
+                target="_blank"
+                class="btn btn-success mt-2 btn-animate"
+              >
+                <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center mb-4">
+            <div class="layanan-card p-4 rounded shadow h-100">
+              <img
+                src="kulkas.jpeg"
+                alt="Servis Kulkas"
+                class="img-fluid mb-3 rounded"
+                style="height: 180px; object-fit: cover"
+              />
+              <h5 class="fw-semibold">Servis Kulkas</h5>
+              <p class="text-muted">
+                Kulkas tidak dingin, bocor, mati total, atau pengganti freon &
+                sensor.
+              </p>
+              <a
+                href="https://wa.me/6282213255669?text=Halo%2C%20saya%20butuh%20servis%20Kulkas"
+                target="_blank"
+                class="btn btn-success mt-2 btn-animate"
+              >
+                <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center mb-4">
+            <div class="layanan-card p-4 rounded shadow h-100">
+              <img
+                src="oven.jpg"
+                alt="Servis Oven & Microwave"
+                class="img-fluid mb-3 rounded"
+                style="height: 180px; object-fit: cover"
+              />
+              <h5 class="fw-semibold">Servis Oven & Microwave</h5>
+              <p class="text-muted">
+                Perbaikan oven listrik/gas, microwave tidak panas, error, atau
+                meledak.
+              </p>
+              <a
+                href="https://wa.me/6281234567890?text=Halo%2C%20saya%20butuh%20servis%20Oven%20atau%20Microwave"
+                target="_blank"
+                class="btn btn-success mt-2 btn-animate"
+              >
+                <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center mb-4">
+            <div class="layanan-card p-4 rounded shadow h-100">
+              <img
+                src="cookerhood.jpeg"
+                alt="Servis Cooker Hood"
+                class="img-fluid mb-3 rounded"
+                style="height: 180px; object-fit: cover"
+              />
+              <h5 class="fw-semibold">Servis Cooker Hood</h5>
+              <p class="text-muted">
+                Perbaikan cooker hood berisik, hisap lemah, mati total, atau
+                ganti filter.
+              </p>
+              <a
+                href="https://wa.me/6281234567890?text=Halo%2C%20saya%20butuh%20servis%20Cooker%20Hood"
+                target="_blank"
+                class="btn btn-success mt-2 btn-animate"
+              >
+                <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- LAYANAN SELESAI -->
+
+    <!-- PORTOFOLIO MULAI -->
+    <!-- <div class="container-fluid pt-5 pb-5 bg-light">
+    <div class="container text-center">
+        <h2 class="display-3" id="portofolio">PORTOFOLIO</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ducimus natus fuga excepturi accusantium rem eligendi magnam esse assumenda perferendis!</p>
+        <div class="row pt-4 gx-4 gy-4">
+            <div class="col-md-4">
+                <div class="card crop-img">
+                    <img src="org.jpg" class="card-img-top" width="200" height="200" >
+                    <div class="card-body">
+                      <h5 class="card-title">Lorem, ipsum.</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tenetur necessitatibus praesentium aspernatur dolore animi!</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card crop-img">
+                    <img src="org.jpg" class="card-img-top" width="200" height="200" >
+                    <div class="card-body">
+                      <h5 class="card-title">Lorem, ipsum.</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tenetur necessitatibus praesentium aspernatur dolore animi!</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card crop-img">
+                    <img src="org.jpg" class="card-img-top" width="200" height="200" >
+                    <div class="card-body">
+                      <h5 class="card-title">Lorem, ipsum.</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tenetur necessitatibus praesentium aspernatur dolore animi!</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+
+PORTOFOLIO SELESAI -->
+    <!-- TENTANG -->
+    <div
+      class="container-fluid pt-5 pb-5 bg-gradient"
+      id="tentang"
+      data-aos="fade-up"
+      style="background: linear-gradient(to right, #f8f9fa, #e9ecef)"
+    >
+      <div class="container">
+        <h2 class="display-4 text-center fw-bold mb-4 text-dark">
+          TENTANG KAMI
+        </h2>
+        <p class="text-center fs-5 mb-5 text-muted">
+          Kami hadir sebagai solusi servis rumah tangga yang berfokus dan
+          profesional. Bukan sekadar teknisi umum, tapi tim ahli yang mengerti
+          secara mendalam teknologi Ariston dan perangkat lainnya.
+        </p>
+        <div class="row">
+          <!-- LEFT -->
+          <div class="col-md-6">
+            <div class="bg-light p-4 rounded shadow-sm mb-4">
+              <p class="mb-2">
+                <i class="fa-solid fa-lightbulb text-warning me-2"></i>
+                <strong>Ahli Ariston</strong> – Menguasai fitur dan sistem
+                berbagai model terbaru.
+              </p>
+            </div>
+            <div class="bg-light p-4 rounded shadow-sm mb-4">
+              <p class="mb-2">
+                <i class="fa-solid fa-toolbox text-primary me-2"></i>
+                <strong>Teknisi Andal</strong> – Sudah berpengalaman, tidak
+                coba-coba.
+              </p>
+            </div>
+            <div class="bg-light p-4 rounded shadow-sm mb-4">
+              <p class="mb-2">
+                <i class="fa-solid fa-shield-halved text-success me-2"></i>
+                <strong>Garansi Layanan</strong> – Hanya bayar jika masalah
+                terselesaikan.
+              </p>
+            </div>
+            <div class="bg-light p-4 rounded shadow-sm mb-4">
+              <p class="mb-2">
+                <i class="fa-solid fa-stopwatch text-danger me-2"></i>
+                <strong>Respons Cepat</strong> – Pemesanan hari ini, langsung
+                dijadwalkan.
+              </p>
+            </div>
+            <div class="bg-light p-4 rounded shadow-sm">
+              <p class="mb-2">
+                <i class="fa-solid fa-house-circle-check text-info me-2"></i>
+                <strong>Datang ke Lokasi</strong> – Praktis tanpa harus keluar
+                rumah, kami yang datang.
+              </p>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="col-md-6 text-center">
+            <img
+              src="jasatukang.jpg"
+              class="img-fluid shadow-lg"
+              alt="Teknisi Profesional"
+              style="
+                max-height: 500px;
+                border-radius: 15px;
+                transform: rotate(-3deg);
+              "
+            />
+          </div>
+        </div>
+        <p class="text-center fs-5 mt-5 mb-5 text-muted">
+          Kami mengutamakan kenyamanan Anda dengan layanan profesional yang
+          mudah diakses dan respons cepat — cukup hubungi via WhatsApp, teknisi
+          siap datang ke rumah Anda!
+        </p>
+      </div>
+    </div>
+    <!-- TENTANG SELESAI -->
+
+    <!-- TESTIMONI -->
+    <div class="container-fluid pt-5 pb-5 bg-light" data-aos="fade-up">
+      <div class="container text-center">
+        <h2 class="display-3 fw-bold" id="testimoni">TESTIMONI PELANGGAN</h2>
+        <p class="mb-4">
+          Beberapa ulasan dari pelanggan yang telah menggunakan layanan servis
+          Ariston kami. Kepuasan Anda adalah prioritas kami.
+        </p>
+
+        <div class="row pt-4 gx-4 gy-4 justify-content-center">
+          <!-- Testimoni 1 -->
+          <div class="col-md-4 text-center">
+            <img
+              src="testi1.jpeg"
+              class="rounded-circle mb-3 shadow"
+              width="100"
+              height="100"
+              alt="Testimoni 1"
+            />
+            <h5 class="fw-bold">Dewi Rahma</h5>
+            <p class="text-muted">Depok</p>
+            <div class="text-warning mb-2">★★★★★</div>
+            <p class="fst-italic">
+              "Servis Ariston saya ditangani dengan cepat dan profesional.
+              Teknisi datang tepat waktu dan hasilnya sangat memuaskan. Pasti
+              akan saya rekomendasikan ke teman-teman!"
+            </p>
+          </div>
+
+          <!-- Testimoni 2 -->
+          <div class="col-md-4 text-center">
+            <img
+              src="testi3.jpeg"
+              class="rounded-circle mb-3 shadow"
+              width="100"
+              height="100"
+              alt="Testimoni 2"
+            />
+            <h5 class="fw-bold">Reza Fadhillah</h5>
+            <p class="text-muted">Bekasi</p>
+            <div class="text-warning mb-2">★★★★★</div>
+            <p class="fst-italic">
+              "Tukangnya ramah, menjelaskan kerusakan dengan jelas, dan servis
+              water heater Ariston saya langsung berfungsi normal. Terima kasih
+              atas pelayanannya!"
+            </p>
+          </div>
+
+          <!-- Testimoni 3 -->
+          <div class="col-md-4 text-center">
+            <img
+              src="testi2.jpeg"
+              class="rounded-circle mb-3 shadow"
+              width="100"
+              height="100"
+              alt="Testimoni 3"
+            />
+            <h5 class="fw-bold">Sinta Maharani</h5>
+            <p class="text-muted">Jakarta Selatan</p>
+            <div class="text-warning mb-2">★★★★★</div>
+            <p class="fst-italic">
+              "Sangat puas dengan layanan servis Ariston di rumah saya.
+              Prosesnya cepat, rapi, dan hasilnya tahan lama. Tidak perlu cari
+              teknisi lain lagi!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TESTIMONI SELESAI -->
+
+    <!-- CLIENT -->
+    <!-- 
+<div class="container-fluid client pt-5">
+  <div class="container text-center">
+    <div class="row pt-4 gx-4 gy-4" > 
+      <div class="col">
+        <img src="ty.png">
+      </div>
+      <div class="col">
+        <img src="ty.png">
+      </div>
+      <div class="col">
+        <img src="ty.png">
+      </div>
+      <div class="col">
+        <img src="ty.png">
+      </div>
+      <div class="col">
+        <img src="ty.png">
+      </div>
+    </div>
+  </div>
+</div> -->
+
+    <!-- CLIENT SELESAI -->
+
+    <!-- KONTAK KAMI -->
+    <div class="container-fluid pt-5 pb-5 bg-light kontak" data-aos="zoom-in">
+      <div class="container text-center">
+        <h2 class="display-4 fw-bold mb-3" id="kontak">KONTAK KAMI</h2>
+        <p class="mb-4 text-muted fs-5">
+          Hubungi kami langsung melalui WhatsApp untuk konsultasi, pemesanan,
+          atau pertanyaan layanan. Kami siap membantu Anda!
+        </p>
+
+        <a
+          href="https://wa.me/6281234567890"
+          target="_blank"
+          class="btn btn-success btn-lg shadow"
+        >
+          <i class="fa-brands fa-whatsapp me-2"></i> Chat via WhatsApp
+        </a>
+
+        <!-- Teks sebelum iframe -->
+        <p class="text-muted fs-5 mt-5 mb-3">
+          Lokasi bengkel atau tempat layanan kami juga dapat Anda kunjungi
+          secara langsung. Berikut peta lokasi kami:
+        </p>
+
+        <!-- Bungkus iframe dalam div dan atur ukuran -->
+        <div class="d-flex justify-content-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6903.169358593347!2d106.80454294567838!3d-6.4159133963936545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e97a3e476593%3A0x83606f339e835c26!2sJl.%20Rw.%20Geni%20Raya%20No.21%2C%20Ratu%20Jaya%2C%20Kec.%20Cipayung%2C%20Kota%20Depok%2C%20Jawa%20Barat%2016439!5e0!3m2!1sid!2sid!4v1754216402778!5m2!1sid!2sid"
+            width="100%"
+            height="450"
+            style="border: 0; max-width: 1000px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- KONTAK SELESAI -->
+
+    <!-- Floating WhatsApp Button -->
+    <a
+      href="https://wa.me/6281234567890"
+      target="_blank"
+      class="whatsapp-float"
+      aria-label="Chat via WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-1">
+        &copy;Copyright 2025 Jasa Tukang Panggilan. All rights reserved.
+      </p>
+      <small class="text-muted">Website by Tim JasaTukangPro</small>
+    </div>
+  </footer>
+  <script>
+    AOS.init({
+      duration: 1000,
+      delay: 100,
+      once: false,
+      mirror: true,
+    });
+  </script>
+</html>
